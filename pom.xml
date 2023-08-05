@@ -3,41 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>test</groupId>
-    <artifactId>openapi-generator-test-1</artifactId>
+    <artifactId>openapi-generator-test-1-aggregator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <properties>
-        <openapi.generator.version>6.6.0</openapi.generator.version>
-        <skipValidateSpec>false</skipValidateSpec>
-    </properties>
+    <packaging>pom</packaging>
 
-    <build>
-        <resources>
-            <resource>
-                <directory>${basedir}/src</directory>
-            </resource>
-        </resources>
-
-        <plugins>
-            <plugin>
-                <groupId>org.openapitools</groupId>
-                <artifactId>openapi-generator-maven-plugin</artifactId>
-                <version>${openapi.generator.version}</version>
-                <executions>
-                    <execution>
-                        <goals><goal>generate</goal></goals>
-                        <phase>process-resources</phase>
-                        <configuration>
-                            <generatorName>openapi-yaml</generatorName>
-                            <inputSpecRootDirectory>${project.build.outputDirectory}</inputSpecRootDirectory>
-                            <inputSpec>*.yaml</inputSpec>
-                            <output>${project.build.directory}</output>
-                            <skipValidateSpec>${skipValidateSpec}</skipValidateSpec>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+    <modules>
+        <module>openapi-generator-test-1</module>
+    </modules>
 </project>
 
