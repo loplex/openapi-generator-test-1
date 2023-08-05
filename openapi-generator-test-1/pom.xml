@@ -8,6 +8,7 @@
 
     <properties>
         <openapi.generator.version>6.6.0</openapi.generator.version>
+        <swagger.parser.v3.version>2.1.16-bugfix1.3-SNAPSHOT</swagger.parser.v3.version>
         <skipValidateSpec>false</skipValidateSpec>
     </properties>
 
@@ -36,6 +37,13 @@
                         </configuration>
                     </execution>
                 </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>io.swagger.parser.v3</groupId>
+                        <artifactId>swagger-parser-v3</artifactId>
+                        <version>${swagger.parser.v3.version}</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>

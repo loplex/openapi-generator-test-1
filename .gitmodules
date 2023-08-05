@@ -1,0 +1,3 @@
+[submodule "swagger-parser"]
+	path = swagger-parser
+	url = https://github.com/loplex/swagger-parser.git
