@@ -9,6 +9,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>swagger-parser/modules/swagger-parser-v3</module>
         <module>swagger-parser-test-1</module>
     </modules>
 </project>

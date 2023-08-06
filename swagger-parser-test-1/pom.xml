@@ -10,13 +10,14 @@
         <java.version>11</java.version>
         <maven.compiler.release>${java.version}</maven.compiler.release>
 
-        <swagger.parser.v3.version>2.1.16</swagger.parser.v3.version>
+        <!--<swagger.parser.v3.version>2.1.16</swagger.parser.v3.version>-->
+        <swagger.parser.v3.version>2.1.16-bugfix1.3-SNAPSHOT</swagger.parser.v3.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>io.swagger.parser.v3</groupId>
-            <artifactId>swagger-parser</artifactId>
+            <artifactId>swagger-parser-v3</artifactId>
             <version>${swagger.parser.v3.version}</version>
         </dependency>
         <dependency>
