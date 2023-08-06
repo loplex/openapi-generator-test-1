@@ -11,6 +11,10 @@ paths:
     get:
       operationId: getEmptyTwo
       parameters:
+        - name: element
+          in: query
+          schema:
+            $ref: '#/components/schemas/myType'
         - name: elements
           in: query
           schema:

@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>openapi-generator-test-1</module>
+        <module>swagger-parser-test-1</module>
     </modules>
 </project>
 
